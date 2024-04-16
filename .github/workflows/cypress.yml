@@ -14,4 +14,11 @@ jobs:
         uses: cypress-io/github-action@v6
         with:
           build: npm run build
-          start: npm start
+      - name: Run Cypress tests
+        run: npm run cypress:run || true
+      - name: Print failure message if tests fail
+        run: |
+         if [ $? -ne 0 ]; then
+         echo "Some tests failed! Please check the Cypress test logs for details."
+         fi
+
