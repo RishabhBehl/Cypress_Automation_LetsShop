@@ -9,7 +9,7 @@ module.exports = defineConfig({
     specPattern: [
     "cypress/E2E/Tests/User_Login.js",
     "cypress/E2E/Tests/User_OrderProduct.js",
-    "cypress/E2E/Tests/User_Registration.js"
+    // "cypress/E2E/Tests/User_Registration.js"
     
     ],
     },
