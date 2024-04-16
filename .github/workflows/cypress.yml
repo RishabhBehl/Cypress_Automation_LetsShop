@@ -14,3 +14,8 @@ jobs:
         uses: cypress-io/github-action@v6
         with:
           build: npm run build
+      - name: Run Cypress tests
+        run: npm run cypress:run
+      - name: Print success message
+        run: echo "All tests passed successfully!"
+
