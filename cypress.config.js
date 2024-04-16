@@ -7,8 +7,8 @@ module.exports = defineConfig({
     },
     watchForFileChanges: false, //add comment
     specPattern: [
-    "cypress/E2E/Tests/User_Login.js",
-    "cypress/E2E/Tests/User_OrderProduct.js",
+    "cypress/E2E/Tests/User_Login-Logout-Order.js",
+    //"cypress/E2E/Tests/User_OrderProduct.js",
     // "cypress/E2E/Tests/User_Registration.js"
     
     ],
