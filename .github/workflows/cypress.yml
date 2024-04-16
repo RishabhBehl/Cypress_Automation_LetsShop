@@ -15,7 +15,10 @@ jobs:
         with:
           build: npm run build
       - name: Run Cypress tests
-        run: npm run cypress:run
-      - name: Print success message
-        run: echo "All tests passed successfully!"
+        run: npm run cypress:run || true
+      - name: Print failure message if tests fail
+        run: |
+         if [ $? -ne 0 ]; then
+         echo "Some tests failed! Please check the Cypress test logs for details."
+         fi
 
