@@ -17,7 +17,7 @@ describe('User Login', () => {
     cy.get('#login').click();
     cy.url().should('be.equal','https://rahulshettyacademy.com/client/dashboard/dash'); 
     cy.get('[class="fa fa-sign-out"]').click()
-    cy.url().should('be.equal', 'https://rahulshettyacademy.com/client/auth/login')
+    cy.url().should('be.equal', 'https://rahulshettyacademy.com/client/auth/login');
   });
 
   it('should login and order', () => {
