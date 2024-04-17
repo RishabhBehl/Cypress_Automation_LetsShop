@@ -11,7 +11,7 @@ describe('User Login', () => {
 
   it('should login and logout successfully', () => {
 
-    //cy.visit('https://rahulshettyacademy.com/client');
+    cy.visit('https://rahulshettyacademy.com/client');
     cy.get('#userEmail').type('andrew@example.com');
     cy.get('#userPassword').type('Hello@123');
     cy.get('#login').click();
